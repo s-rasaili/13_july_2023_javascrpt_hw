@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <script>
+        //function checkCity(city) {
+            //var inuputDisplay = document.getElementById("ocity");
+			
+			//if(city == "other"){
+			//	inuputDisplay.style.display = "block";
+			//}
+            //else{
+			//	inuputDisplay.style.display = "none";
+			//}
+   //   }
+   function checkColor(color){
+		var inputDiv = document.getElementById("div_out");
+		if(color == "green"){
+			inputDiv.style.backgroundColor = "green";
+		}
+		if(color == "red"){
+			inputDiv.style.backgroundColor = "red";
+		}
+		if(color == "black"){
+			inputDiv.style.backgroundColor = "black";
+		}
+   }
+    </script>
+</head>
+
+<body>
+	
+	<!--<select onchange="checkCity(this.value)">
+		<option value="bhopal">BHOPAL</option>
+		<option value="indore">INDORE</option>
+		<option value="gwalior">GWALIOR</option>
+		<option value="other">OTHER</option>
+	</select>-->
+	
+	<!--<input type="text" id="ocity" style="display:none;" />-->
+	
+	<div id="div_out" style="background-color:blue;color:white;padding:20px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+	
+	<select onchange="checkColor(this.value)">
+		<option value="green">Green</option>
+		<option value="red">Red</option>
+		<option value="black">black</option>
+	</select>
+
+</body>
+
+</html>
